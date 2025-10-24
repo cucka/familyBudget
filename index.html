@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Family Budget App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Family Budjet :)</h1>
+        <div class="app">
+            <aside class="left">
+                <form id="expenseForm">
+                    <label for="monthSelect">Month</label>
+                    <select id="monthSelect" name="month" required>
+                        <option>--Select a month--</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <label for="typeSelect">Expence type</label>
+                    <select id="typeSelect" name="type" required>
+                        <option>--Select an expence--</option>
+                        <option>telephone</option>
+                        <option>fuel</option>
+                        <option>food</option>
+                    </select>
+                    <label for="amountInput">Amount</label>
+                    <input type="number" id="amountInput" name="amount" min="0" step="0.01" placeholder="0.00"
+                        required />
+                    <button id="saveBtn" type="submit">Save Expence</button>
+                </form>
+                
+                <hr />
+
+                <label for="viewMonth">View month</label>
+                <select id="viewMonth">
+                    <option value="">-- Select month to view --</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+            </aside>
+            <!-- RIGHT: Expenses list -->
+            <main class="right">
+                <h2>Expenses for: <span id="currentMonth">—</span></h2>
+                <ul id="expensesList" class="expenses-list">
+                    <!-- JS will fill this -->
+                </ul>
+                <div id="totalContainer">Total: <span id="totalAmount">0.00</span></div>
+            </main>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

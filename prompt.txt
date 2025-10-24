@@ -1,0 +1,19 @@
+#CONTEXT#
+Hi I am a student and I am visiting web course for creating an online application.
+#OBJECT#
+I have to create a simple family budget app with technologies php, mysql, html, css and javascript. I am using XAMPP;
+html page:
+- should include a form(on the left side of the page) that have select with months, a select with expences(telephone, electricity, fuel, food, clothes), 
+and button that record this things via javascript in mysql base.
+- a list with expences per month should appear in right. Expences are loaded from mysql via javascript;
+css: basic style for the html page;
+javascript: post and get request for the data in mysql;
+php: the connection between javascript and mysql.
+#STYLE#
+Beginner programming level.
+#Tone#
+Profesional
+#Audience#
+Me
+#Response#
+Separated PHP, HTML, CSS and JS files. Please Explain me step by step.

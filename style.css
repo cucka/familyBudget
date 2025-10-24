@@ -1,0 +1,132 @@
+/* Basic beginner-friendly styling */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --accent: #2b6cb0;
+  --muted: #6b7280;
+}
+
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: var(--bg);
+  color: #111827;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+
+
+.app {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* left (form) and right (list) columns */
+.left {
+  width: 320px;
+  background: var(--card);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+.right {
+  flex: 1;
+  background: var(--card);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+/* form controls */
+label {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+
+button {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+button:active {
+  transform: translateY(1px);
+}
+
+
+/* expenses list */
+.expenses-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.expenses-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+
+.expense-meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+
+#totalContainer {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+/* responsive */
+@media (max-width: 780px) {
+  .app {
+    flex-direction: column;
+  }
+  .left { width: 100%; }
+}
+
+
+
